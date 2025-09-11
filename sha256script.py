@@ -10,4 +10,4 @@ for dir in os.listdir():
                         bytes = f.read() 
                         readable_hash = hashlib.sha256(bytes).hexdigest();
                     with open(file_path + ".sha256", "w") as hash_file:
-                        hash_file.write(f"{readable_hash}")
+                        hash_file.write(readable_hash)
